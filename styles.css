@@ -5,7 +5,15 @@
     font-family: 'Bad Script', cursive;
 }
 
+#admin
+{
+   position: absolute;
+   top: 8px;
+   right: 16px; 
+   font-size: 100%;
+}
 body
 {
     background-color: rgb(236, 229, 255);
 }
+
