@@ -1,6 +1,6 @@
 <?php
 
-//session_start();
+session_start();
 
 function displayLogin(){
     //displays Quiz if session is active
