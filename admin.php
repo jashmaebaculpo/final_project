@@ -49,7 +49,7 @@ function displayLogin(){
             <input type="text" name="luster" placeholder = "Luster"/><br/>
             <input type="text" name="element" placeholder = "Element"/><br/>
             <input type="text" name="price" placeholder = "Price"/><br/>
-            <input type="text" name="moh's" placeholder = "Moh's"/><br/>
+            <input type="text" name="mohs" placeholder = "Moh's"/><br/>
             
             <input type= "submit"  name= "submit" value= "add"/>
         </form>
