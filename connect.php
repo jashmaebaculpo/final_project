@@ -3,8 +3,8 @@
 function getDBConnection() {
     
     //C9 db info
-    $host = "us-cdbr-iron-east-05.cleardb.net";
-    $dbName = "heroku_3033736f05ca58d";
+    $host = "localhost";//us-cdbr-iron-east-05.cleardb.net
+    $dbName = "FinalProject";//heroku_3033736f05ca58d
     $username = "root";
     $password = "";
     
@@ -15,6 +15,7 @@ function getDBConnection() {
         $dbName = substr($url["path"], 1);
         $username = $url["user"];
         $password = $url["pass"];
+        
     } 
     
     try {
@@ -25,7 +26,8 @@ function getDBConnection() {
         $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
     }
     catch (PDOException $e) {
-       echo "Problems connecting to database!";
+      echo "Connection failed: " . $e->getMessage();
+       
        exit();
     }
     
