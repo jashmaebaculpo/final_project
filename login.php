@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <head>
         <title>Login</title>
-        
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <h1>Login</h1>
         <h2>Credentials required before submiting form.</h2>
         <p>You can log in using usernames <strong>admin</strong> or <strong>admin2</strong>. The password is <strong>hello</strong>.</p>
