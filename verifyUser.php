@@ -14,7 +14,7 @@ $user = $stmt->fetch(PDO::FETCH_ASSOC);
 //redirecting user if credentials are valid
 if(isset($user['username'])){
 $_SESSION['username'] = $user['username'];
-header('Location: index.php');
+header('Location: admin.php');
     
 } else {
     echo $user['username'];
