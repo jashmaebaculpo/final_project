@@ -38,6 +38,9 @@ function displayLogin(){
             
         </div>
         
+        <h1>
+            Add crystal:
+        </h1>
         
         <form method = "post" action = "addData.php">
             <input type="text" name="name" placeholder = "Name"/><br/>
