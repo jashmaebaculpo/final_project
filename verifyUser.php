@@ -4,7 +4,7 @@ include 'connect.php';
 $connect = getDBConnection();
 //Checking credentials in database
 $sql = "SELECT * FROM admin 
-        WHERE username = :username
+        WHERE userName = :username
         AND password = :password";
 $stmt = $connect->prepare($sql);
 $data = array(":username" => $_POST['username'], ":password" => sha1($_POST['password']));

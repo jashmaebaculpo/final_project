@@ -3,9 +3,9 @@
 function getDBConnection() {
     
     //C9 db info
-    $host = "localhost";
-    $dbName = "FinalProject";
-    $username = getenv("C9_USER");
+    $host = "us-cdbr-iron-east-05.cleardb.net";
+    $dbName = "heroku_3033736f05ca58d";
+    $username = "root";
     $password = "";
     
     //when connecting from Heroku
