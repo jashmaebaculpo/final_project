@@ -39,6 +39,16 @@ function displayLogin(){
         </div>
         
         
-        <!--<script src="js/need.js"></script>-->
+        <form method = "post" action = "addData.php">
+            <input type="text" name="name" placeholder = "Name"/><br/>
+            <input type="text" name="habitat" placeholder = "Habitiat"/><br/>
+            <input type="text" name="color" placeholder = "Color"/><br/>
+            <input type="text" name="luster" placeholder = "Luster"/><br/>
+            <input type="text" name="element" placeholder = "Element"/><br/>
+            <input type="text" name="price" placeholder = "Price"/><br/>
+            <input type="text" name="moh's" placeholder = "Moh's"/><br/>
+            
+            <input type= "submit"  name= "submit" value= "add"/>
+        </form>
     </body>
 </html>
