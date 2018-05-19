@@ -23,7 +23,14 @@ function displayLogin(){
     <body>
         <div class="user-menu">
             <?php echo "Welcome ".$_SESSION['username']."! ";?> 
-            <input type="button" id="logoutBtn" value="Logout" />    
+            <input type="button" id="logoutBtn" value="Logout" />
+            <script>
+              $("#logoutBtn").click( function() 
+                {
+                    window.location.href="logout.php";
+                }
+            );
+            </script>
         </div>
     </body>
 </html>
