@@ -18,15 +18,17 @@ function displayLogin(){
         <title>
             Admin Page
         </title>
-        
-        <script>
-        /* global $ */
-        $(document).ready(function(){
-            $("#logoutBtn").click( function() 
-                {
-                    window.location.href="logout.php";
-                }
-            );
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $('#logoutBtn').on('click', 'button', function(){
+                $.ajax('logout.php',{
+                    success: function(response)
+                    {
+                        window.location.href="logout.php";
+                    }
+                })
+            })
         });
         </script>
     </head>
