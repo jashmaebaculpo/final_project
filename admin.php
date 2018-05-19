@@ -18,19 +18,23 @@ function displayLogin(){
         <title>
             Admin Page
         </title>
+        
+        <script>
+        $(document).ready(function(){
+            $("#logoutBtn").click( function() 
+                {
+                    window.location.href="logout.php";
+                }
+            );
+        });
+        </script>
     </head>
     
     <body>
         <div class="user-menu">
             <?php echo "Welcome ".$_SESSION['username']."! ";?> 
             <input type="button" id="logoutBtn" value="Logout" />
-            <script>
-              $("#logoutBtn").click( function() 
-                {
-                    window.location.href="logout.php";
-                }
-            );
-            </script>
+            
         </div>
     </body>
 </html>
