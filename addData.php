@@ -3,7 +3,7 @@
     include 'connect.php';
     $connect = getDBConnection();
     //Checking credentials in database
-    $sql = "INSERT INTO Crystals (name, habitat, color, luster, element, price, moh's)
+    $sql = "INSERT INTO crystals (name, habitat, color, luster, element, price, moh's)
             VALUES (:name, :habitat, :color, :luster, :element, :price, :moh's)";
     $stmt = $connect->prepare($sql);
     $data = array(":name" => $_POST['name'], ":habitat" => $_POST['habitat'], ":color" => $_POST['color'], ":luster" => $_POST['luster'], ":element" => $_POST['element'], 
