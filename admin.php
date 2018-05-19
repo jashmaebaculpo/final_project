@@ -51,7 +51,17 @@ function displayLogin(){
             <input type="text" name="price" placeholder = "Price"/><br/>
             <input type="text" name="mohs" placeholder = "Moh's"/><br/>
             
-            <input type= "submit"  name= "submit" value= "add"/>
+            <input type= "submit"  name= "submit" value= "Add"/>
+        </form>
+        
+        <h1>
+            Remove crystal:
+        </h1>
+        
+        <form method = "post" action = "deleteData.php">
+            <input type="text" name="name" placeholder = "Name"/><br/>
+            
+            <input type= "submit"  name= "submit" value= "Delete"/>
         </form>
     </body>
 </html>
