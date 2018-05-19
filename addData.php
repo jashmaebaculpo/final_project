@@ -9,9 +9,9 @@
     echo "made the crystal";
     $stmt = $connect->prepare($sql);
     echo "made the statement \n";
-    $data = array(":name" => $_POST['name'], ":habitat" => $_POST['habitat'], ":color" => $_POST['color'], ":luster" => $_POST['luster'], ":element" => $_POST['element'], 
-                    ":price" => $_POST['price'], ":mohs" => $_POST['mohs']);
-   
+    //$data = array(":name" => $_POST['name'], ":habitat" => $_POST['habitat'], ":color" => $_POST['color'], ":luster" => $_POST['luster'], ":element" => $_POST['element'], 
+                    //":price" => $_POST['price'], ":mohs" => $_POST['mohs']);
+   echo "Made the data\n";
     $dbConn->exec($sql);
     echo "connected\n";
 ?>
