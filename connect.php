@@ -3,8 +3,8 @@
 function getDBConnection() {
     
     //C9 db info
-    $host = "localhost";//us-cdbr-iron-east-05.cleardb.net
-    $dbName = "FinalProject";//heroku_3033736f05ca58d
+    $host = "us-cdbr-iron-east-05.cleardb.net";//us-cdbr-iron-east-05.cleardb.net
+    $dbName = "heroku_3033736f05ca58d";//heroku_3033736f05ca58d
     $username = "root";
     $password = "";
     
