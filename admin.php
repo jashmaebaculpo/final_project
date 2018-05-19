@@ -20,6 +20,7 @@ function displayLogin(){
         </title>
         
         <script>
+        /* global $ */
         $(document).ready(function(){
             $("#logoutBtn").click( function() 
                 {
