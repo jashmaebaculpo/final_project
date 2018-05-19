@@ -24,7 +24,7 @@ function displayLogin(){
             $.ajax({
                 url: 'logout.php',
                 success: function(data){
-                    window.location.href = data;
+                    window.location.replace('/logout.php');
                 }
             });
         }
