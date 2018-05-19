@@ -36,6 +36,7 @@
                     
                     $chosenOne = rand(0, 22); 
                     $imgURL = "./Crystals/" . $Rocks[$chosenOne] . ".jpg";
+                    echo $Rocks[$chosenOne];
                     return $imgURL;
                 }
                 
