@@ -26,10 +26,25 @@
             <a href= "login.php">Admin?</a>
         </dv>
         
+        <div id = "rock">
         <?php
-            $imgURL = "./Crystals/Amethyst.jpg";
-            echo "<img src = '$imgURL' >";
+            
+            function getRock()
+                {
+                    $Rocks = array('Amethyst', 'Apophyillite', 'Aventurine', 'Carnelian', 'Citrine', 'Danburite', 'Emerald', 'Fluorite', 'Howlite', 'Jade', 'Kyanite', 'Lepidolite',
+                                    'Malachite', 'Moonstone', 'Onyx', 'Prasiolite', 'Pyrite', 'Rhodonite', 'Selenite', 'Sodalite', 'Topaz', 'Unakite');
+                    
+                    $chosenOne = rand(0, 22); 
+                    $imgURL = "./Crystals/" . $Rocks[$chosenOne] . ".jpg";
+                    return $imgURL;
+                }
+                
+                
+                $imgURL = getRock();
+                echo "<img src = '$imgURL' >";
         ?>
+        </div>
+        
         
     </body>
 </html>
